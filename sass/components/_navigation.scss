@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  font-size: 8px;
+  font-weight: 400;
+  fill: var(--text-white-color);
+  color: var(--text-white-color);
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    cursor: pointer;
+    padding-left: 6px;
+    color: var(--text-white-color);
+  }
+
+  &__icon {
+    width: 12px;
+  }
+
+  &__link {
+    &--active {
+      color: var(--brand-visvis-color);
+      border-bottom: 1px solid var(--brand-visvis-color);
+      border-radius: 2px;
+    }
+  }
+}

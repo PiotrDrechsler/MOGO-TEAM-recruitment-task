@@ -2,7 +2,6 @@
   font-family: var(--brand-font);
   color: var(--text-black-color);
   font-size: 15px;
-  background-color: var(--brand-lightcoral-color);
 }
 
 h1,
@@ -37,6 +36,11 @@ textarea:focus {
   outline: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .list {
   list-style: none;
 }
@@ -60,12 +64,41 @@ textarea:focus {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/banner-mobile.png");
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/banner/banner-mobile.png");
   background-size: cover;
   min-height: 400px;
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 15px;
+}
+.banner__header {
+  margin-top: 80px;
+  color: var(--text-white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__tittle {
+  font-family: var(--decorative-font);
+  font-size: 28px;
+  font-weight: 200;
+}
+.banner__tittle--main {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1em;
+}
+.banner__button {
+  border: 2px solid var(--text-white-color);
+  color: var(--text-white-color);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 8px 30px 8px 30px;
+  margin-top: 25px;
 }
 
 .logo {
@@ -95,15 +128,20 @@ textarea:focus {
 }
 .navigation__link--active {
   color: var(--brand-visvis-color);
+}
+.navigation__link--active::after {
+  content: "";
   border-bottom: 1px solid var(--brand-visvis-color);
-  border-radius: 2px;
+  display: block;
+  position: absolute;
+  width: 30px;
+  top: 32px;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 :root {

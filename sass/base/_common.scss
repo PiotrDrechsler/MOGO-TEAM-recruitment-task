@@ -2,7 +2,6 @@
   font-family: var(--brand-font);
   color: var(--text-black-color);
   font-size: 15px;
-  background-color: var(--brand-lightcoral-color);
 }
 
 h1,
@@ -35,6 +34,11 @@ img {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }
 
 .list {

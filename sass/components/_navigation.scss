@@ -23,8 +23,14 @@
   &__link {
     &--active {
       color: var(--brand-visvis-color);
-      border-bottom: 1px solid var(--brand-visvis-color);
-      border-radius: 2px;
+      &::after {
+        content: '';
+        border-bottom: 1px solid var(--brand-visvis-color);
+        display: block;
+        position: absolute;
+        width: 30px;
+        top: 32px;
+      }
     }
   }
 }

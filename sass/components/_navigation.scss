@@ -25,10 +25,10 @@
       color: var(--brand-visvis-color);
       &::after {
         content: '';
-        border-bottom: 1px solid var(--brand-visvis-color);
+        border-bottom: 2px solid var(--brand-visvis-color);
         display: block;
         position: absolute;
-        width: 30px;
+        width: 3.5em;
         top: 32px;
       }
     }

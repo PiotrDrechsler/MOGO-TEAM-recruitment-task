@@ -209,6 +209,28 @@ button {
   fill: var(--brand-lightcoral-color);
 }
 
+.subscribe {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.subscribe__input {
+  border: 1px solid var(--border-color);
+  border-right: none;
+}
+.subscribe__input::placeholder {
+  color: var(--border-color);
+  font-size: 10px;
+}
+.subscribe__button {
+  background-color: var(--brand-riptide-color);
+  color: var(--text-white-color);
+  padding: 5px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .team {
   text-align: center;
 }
@@ -236,6 +258,20 @@ button {
   justify-content: space-between;
 }
 
+.footer {
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.footer__text {
+  font-size: 10px;
+}
+.footer__text--creator {
+  color: var(--brand-lightcoral-color);
+}
+
 :root {
   --brand-lightcoral-color: #f38181;
   --brand-visvis-color: #fce38a;
@@ -246,6 +282,7 @@ button {
   --text-white-color: #ffffff;
   --text-gray-color: #999999;
   --vector-color: #95e1d3;
+  --border-color: #e7e7e7;
   --brand-font: "Montserrat", sans-serif;
   --decorative-font: "Kaushan Script", cursive;
   --text-font: "Roboto", sans-serif;

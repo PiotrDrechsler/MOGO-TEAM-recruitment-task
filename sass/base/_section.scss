@@ -29,4 +29,11 @@
       }
     }
   }
+
+  &__text {
+    font-family: var(--text-font);
+    color: var(--text-gray-color);
+    text-align: center;
+    font-weight: 400;
+  }
 }

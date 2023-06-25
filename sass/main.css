@@ -87,6 +87,12 @@ button {
   top: 1.5em;
   left: 4em;
 }
+.section__text {
+  font-family: var(--text-font);
+  color: var(--text-gray-color);
+  text-align: center;
+  font-weight: 400;
+}
 
 .banner {
   background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/banner/banner-mobile.png");
@@ -181,6 +187,28 @@ button {
   font-family: var(--text-font);
   color: var(--text-gray-color);
   font-size: 15px;
+  font-weight: 400;
+}
+
+.team {
+  text-align: center;
+}
+.team__item {
+  margin-top: 50px;
+}
+.team__image {
+  width: 100%;
+}
+.team__name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.team__text {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-gray-color);
+  font-family: var(--text-font);
+  margin-top: 10px;
 }
 
 .header__container {

@@ -190,6 +190,25 @@ button {
   font-weight: 400;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-visvis-color);
+}
+.social__item {
+  padding: 0 30px;
+  border-right: 1px solid var(--brand-lightcoral-color);
+}
+.social__item--end {
+  border: none;
+}
+.social__item--first {
+  border-left: 1px solid var(--brand-lightcoral-color);
+}
+.social__icon {
+  fill: var(--brand-lightcoral-color);
+}
+
 .team {
   text-align: center;
 }

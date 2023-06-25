@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-visvis-color);
+
+  &__item {
+    padding: 0 30px;
+    border-right: 1px solid var(--brand-lightcoral-color);
+    &--end {
+      border: none;
+    }
+    &--first {
+      border-left: 1px solid var(--brand-lightcoral-color);
+    }
+  }
+
+  &__icon {
+    fill: var(--brand-lightcoral-color);
+  }
+}

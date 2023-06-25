@@ -1,0 +1,22 @@
+.services {
+  text-align: center;
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    margin-bottom: 10px;
+    fill: var(--vector-color);
+  }
+
+  &__name {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: var(--text-font);
+    color: var(--text-gray-color);
+    font-size: 15px;
+  }
+}

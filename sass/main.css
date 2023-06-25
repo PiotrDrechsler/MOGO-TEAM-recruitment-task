@@ -59,8 +59,33 @@ button {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__title {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: var(--decorative-font);
+}
+.section__title--main {
+  font-weight: 800;
+  font-family: var(--brand-font);
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.section__title--main::after {
+  content: "";
+  border-bottom: 3px solid var(--brand-lightcoral-color);
+  display: block;
+  width: 3em;
+  position: relative;
+  top: 1.5em;
+  left: 4em;
 }
 
 .banner {
@@ -136,6 +161,26 @@ button {
   position: absolute;
   width: 3.5em;
   top: 32px;
+}
+
+.services {
+  text-align: center;
+}
+.services__item {
+  margin-bottom: 40px;
+}
+.services__icon {
+  margin-bottom: 10px;
+  fill: var(--vector-color);
+}
+.services__name {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.services__text {
+  font-family: var(--text-font);
+  color: var(--text-gray-color);
+  font-size: 15px;
 }
 
 .header__container {

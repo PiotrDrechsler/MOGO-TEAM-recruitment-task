@@ -283,6 +283,7 @@ button {
 /* For mobile phones: */
 .social {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--brand-visvis-color);
 }
@@ -301,6 +302,24 @@ button {
 }
 
 /* For desktop: */
+@media only screen and (min-width: 768px) {
+  .social__item {
+    cursor: pointer;
+    padding: 0 15px;
+    background-color: transparent;
+    transition: var(--transition);
+  }
+  .social__item:hover {
+    background-color: var(--brand-lightcoral-color);
+  }
+  .social__item:hover svg {
+    fill: var(--text-white-color);
+  }
+  .social__icon {
+    width: 24px;
+    fill: var(--brand-lightcoral-color);
+  }
+}
 .subscribe {
   display: flex;
   align-items: center;
@@ -378,6 +397,9 @@ button {
     transition-property: transform;
   }
   .team__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: left;
     position: absolute;
     width: 100%;

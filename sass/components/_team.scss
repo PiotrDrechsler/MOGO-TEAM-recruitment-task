@@ -56,6 +56,9 @@
     }
 
     &__overlay {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
       text-align: left;
       position: absolute;
       width: 100%;

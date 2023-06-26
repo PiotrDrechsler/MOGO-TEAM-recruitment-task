@@ -213,6 +213,14 @@ button {
   width: 3.5em;
   top: 32px;
 }
+.navigation__link:hover {
+  color: var(--brand-visvis-color);
+  transition: var(--transition);
+}
+.navigation__link:hover svg {
+  fill: var(--brand-visvis-color);
+  transition: var(--transition);
+}
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
@@ -222,7 +230,8 @@ button {
     font-weight: 500;
   }
   .navigation__icon {
-    width: 18px;
+    width: 20px;
+    height: auto;
   }
   .navigation__link--active {
     font-size: 12px;

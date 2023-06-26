@@ -89,10 +89,10 @@ button {
   content: "";
   border-bottom: 3px solid var(--brand-lightcoral-color);
   display: block;
-  width: 3em;
+  width: 2.5em;
   position: relative;
-  top: 1.5em;
-  left: 4em;
+  top: 20px;
+  left: 40%;
 }
 .section__text {
   font-family: var(--text-font);
@@ -223,6 +223,7 @@ button {
     top: 48px;
   }
 }
+/* For mobile phones: */
 .services {
   text-align: center;
 }
@@ -234,7 +235,7 @@ button {
   fill: var(--vector-color);
 }
 .services__name {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 .services__text {
@@ -244,6 +245,33 @@ button {
   font-weight: 400;
 }
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .services {
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+  }
+  .services__item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas: "A B" "A C";
+    justify-items: start;
+  }
+  .services__icon {
+    grid-area: A;
+    margin-right: 20px;
+  }
+  .services__name {
+    grid-area: B;
+  }
+  .services__text {
+    grid-area: C;
+    max-width: 280px;
+    text-align: left;
+    margin-right: 40px;
+  }
+}
 .social {
   display: flex;
   justify-content: center;

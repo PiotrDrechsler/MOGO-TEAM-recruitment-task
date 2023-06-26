@@ -217,15 +217,19 @@ button {
 .subscribe__input {
   border: 1px solid var(--border-color);
   border-right: none;
+  height: 40px;
+  padding: 10px;
 }
 .subscribe__input::placeholder {
   color: var(--border-color);
   font-size: 10px;
+  padding: 10px;
 }
 .subscribe__button {
   background-color: var(--brand-riptide-color);
   color: var(--text-white-color);
-  padding: 5px 20px;
+  height: 40px;
+  padding: 10px 20px;
   font-size: 10px;
   font-weight: 600;
   cursor: pointer;

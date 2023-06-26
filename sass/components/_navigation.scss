@@ -1,26 +1,21 @@
+/* For mobile phones: */
 .navigation {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 8px;
   font-weight: 400;
-  fill: var(--text-white-color);
   color: var(--text-white-color);
 
-  &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item {
-    cursor: pointer;
-    padding-left: 6px;
-    color: var(--text-white-color);
-  }
-
   &__icon {
+    fill: var(--text-white-color);
     width: 12px;
   }
 
   &__link {
+    cursor: pointer;
+    padding-left: 6px;
     &--active {
       color: var(--brand-visvis-color);
       &::after {
@@ -30,6 +25,32 @@
         position: absolute;
         width: 3.5em;
         top: 32px;
+      }
+    }
+  }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .navigation {
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 500;
+
+    &__icon {
+      width: 18px;
+    }
+
+    &__link {
+      &--active {
+        &::after {
+          content: '';
+          border-bottom: 2px solid var(--brand-visvis-color);
+          display: block;
+          position: absolute;
+          width: 3.5em;
+          top: 42px;
+        }
       }
     }
   }

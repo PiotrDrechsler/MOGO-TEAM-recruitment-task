@@ -62,7 +62,7 @@ button {
 /* For desktop: */
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 0 250px;
+    padding: 0 50px;
   }
 }
 .section {
@@ -141,28 +141,34 @@ button {
 
 .logo {
   color: var(--text-white-color);
-  font-size: 15x;
+  font-size: 15px;
   font-weight: 700;
 }
 
-.navigation {
-  display: flex;
-  font-size: 8px;
-  font-weight: 400;
-  fill: var(--text-white-color);
-  color: var(--text-white-color);
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 30px;
+    margin-right: 250px;
+  }
 }
-.navigation__list {
+/* For mobile phones: */
+.navigation {
+  width: 100%;
   display: flex;
   align-items: center;
-}
-.navigation__item {
-  cursor: pointer;
-  padding-left: 6px;
+  justify-content: flex-end;
+  font-size: 8px;
+  font-weight: 400;
   color: var(--text-white-color);
 }
 .navigation__icon {
+  fill: var(--text-white-color);
   width: 12px;
+}
+.navigation__link {
+  cursor: pointer;
+  padding-left: 6px;
 }
 .navigation__link--active {
   color: var(--brand-visvis-color);
@@ -176,6 +182,25 @@ button {
   top: 32px;
 }
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .navigation {
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .navigation__icon {
+    width: 18px;
+  }
+  .navigation__link--active::after {
+    content: "";
+    border-bottom: 2px solid var(--brand-visvis-color);
+    display: block;
+    position: absolute;
+    width: 3.5em;
+    top: 42px;
+  }
+}
 .services {
   text-align: center;
 }
@@ -203,7 +228,7 @@ button {
   background-color: var(--brand-visvis-color);
 }
 .social__item {
-  padding: 0 30px;
+  padding: 0 20px;
   border-right: 1px solid var(--brand-lightcoral-color);
 }
 .social__item--end {

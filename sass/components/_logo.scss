@@ -1,5 +1,13 @@
 .logo {
   color: var(--text-white-color);
-  font-size: 15x;
+  font-size: 15px;
   font-weight: 700;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 30px;
+    margin-right: 250px;
+  }
 }

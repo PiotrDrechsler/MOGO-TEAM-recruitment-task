@@ -101,6 +101,7 @@ button {
   font-weight: 400;
 }
 
+/* For mobile phones: */
 .banner {
   background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/banner/banner-mobile.png");
   background-size: cover;
@@ -139,6 +140,28 @@ button {
   margin-top: 25px;
 }
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/banner/banner-desktop.png");
+  }
+  .banner__header {
+    padding: 80px 0px 220px 0;
+  }
+  .banner__tittle {
+    font-size: 72px;
+  }
+  .banner__tittle--main {
+    font-size: 130px;
+    margin-top: 30px;
+  }
+  .banner__button {
+    border: 3px solid var(--text-white-color);
+    font-size: 12px;
+    padding: 8px 30px 8px 30px;
+    margin-top: 100px;
+  }
+}
 .logo {
   color: var(--text-white-color);
   font-size: 15px;
@@ -172,6 +195,7 @@ button {
 }
 .navigation__link--active {
   color: var(--brand-visvis-color);
+  font-size: 7px;
 }
 .navigation__link--active::after {
   content: "";
@@ -192,13 +216,11 @@ button {
   .navigation__icon {
     width: 18px;
   }
+  .navigation__link--active {
+    font-size: 12px;
+  }
   .navigation__link--active::after {
-    content: "";
-    border-bottom: 2px solid var(--brand-visvis-color);
-    display: block;
-    position: absolute;
-    width: 3.5em;
-    top: 42px;
+    top: 48px;
   }
 }
 .services {

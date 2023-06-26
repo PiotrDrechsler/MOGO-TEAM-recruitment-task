@@ -46,6 +46,7 @@
     &__image-container:hover {
       box-shadow: 8px 8px var(--brand-riptide-color);
       transform: translate(-8px, -8px);
+      transition: var(--transition);
     }
 
     &__image-container:hover &__overlay {

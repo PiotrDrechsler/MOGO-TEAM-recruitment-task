@@ -320,6 +320,7 @@ button {
     fill: var(--brand-lightcoral-color);
   }
 }
+/* For mobile phones: */
 .subscribe {
   display: flex;
   align-items: center;
@@ -332,7 +333,7 @@ button {
   padding: 10px;
 }
 .subscribe__input::placeholder {
-  color: var(--border-color);
+  color: var(--text-gray-color);
   font-size: 10px;
   padding: 10px;
 }
@@ -346,6 +347,20 @@ button {
   cursor: pointer;
 }
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    margin-top: 0;
+  }
+  .subscribe__input::placeholder {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .subscribe__button {
+    font-size: 15px;
+    padding: 10px 40px;
+  }
+}
 /* For mobile phones: */
 .team {
   text-align: center;
@@ -430,12 +445,13 @@ button {
   justify-content: space-between;
 }
 
+/* For mobile phones: */
 .footer {
   border-top: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 30px 0;
 }
 .footer__text {
   font-size: 20px;
@@ -444,6 +460,17 @@ button {
   color: var(--brand-lightcoral-color);
 }
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .footer__text {
+    font-size: 15px;
+  }
+}
 :root {
   --brand-lightcoral-color: #f38181;
   --brand-visvis-color: #fce38a;
